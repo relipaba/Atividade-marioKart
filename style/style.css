@@ -1,6 +1,158 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, header {
+    width: 100%;
+    height: 100%;
+}
+
+
+header .head {
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    background: linear-gradient(90deg,
+            rgba(142, 230, 115, 0.7) 10%,
+            rgba(147, 230, 250, 0.7) 20%,
+            rgba(132, 153, 245, 0.7) 30%,
+            rgba(235, 175, 250, 0.7) 40%,
+            rgba(250, 204, 208, 0.7) 50%,
+            rgba(254, 248, 175, 0.7) 60%,
+            rgba(196, 198, 252, 0.7) 70%,
+            rgba(164, 212, 254, 0.7) 80%,
+            rgba(138, 248, 232, 0.7) 90%,
+            rgba(230, 249, 147, 0.7) 100%);
+
+    .logo {
+        width: 25%;
+        height: 100%;
+    }
+}
+
+section{
+    padding: 2.5rem;
+    border-bottom: 1px solid black;
+    background-color: #303030;
+}
+
+header nav {
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    background-image: url(/img/navPattern.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 5rem;
+        list-style: none;
+        color: black;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.carrossel_container {
+    width: 100%;
+    /* Ocupa a largura inteira da tela ou do elemento pai */
+    overflow: hidden;
+    /* Mantém os outros banners ocultos */
+    position: relative;
+    margin: auto;
+}
+
+.carrossel_slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carrossel_item {
+    min-width: 100%;
+    /* Força cada slide a ter exatamente a largura do contêiner */
+    box-sizing: border-box;
+}
+
+.carrossel_item img {
+    width: 100%;
+    height: auto;
+    /* Mantém a proporção original do banner */
+    display: block;
+    /* Remove espaçamentos fantasmas abaixo da imagem */
+    border-radius: 1rem;
+}
+
+/* Botões de navegação */
+.btn_carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.btn_carrossel:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.esquerda {
+    left: 10px;
+}
+
+.direita {
+    right: 10px;
+}
+
+.title{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+
+    a{
+        color: white;
+            text-decoration: none;
+    }
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.card_normal{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 2rem;
+    border: 10px double #a21515;
 }
