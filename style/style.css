@@ -15,7 +15,7 @@ header .head {
     width: 100%;
     height: 8rem;
     padding: 1rem;
-    background: linear-gradient(90deg,
+    background: linear-gradient(140deg,
             rgba(142, 230, 115, 0.7) 10%,
             rgba(147, 230, 250, 0.7) 20%,
             rgba(132, 153, 245, 0.7) 30%,
@@ -36,7 +36,7 @@ header .head {
 section{
     padding: 2.5rem;
     border-bottom: 1px solid black;
-    background-color: #303030;
+    background-color: #303030; 
 }
 
 header nav {
@@ -135,7 +135,7 @@ header nav {
     }
 }
 
-.content{
+.card_content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -143,6 +143,22 @@ header nav {
     padding: 0.5rem;
     gap: 1rem;
 }
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "topo topo"
+    "aside article";
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.pista_head { grid-area: topo; display: flex; justify-content: center;}
+aside { grid-area: aside;}
+article {grid-area: article;}
 
 .card_normal{
     width: 100%;
@@ -155,4 +171,11 @@ header nav {
     gap: 1rem;
     border-radius: 2rem;
     border: 10px double #a21515;
+}
+
+.pista1{
+    width: 100%;
+    height: 10rem;
+    background-image: url(/img/Mario_Kart_Stadium.png);
+    background-repeat: no-repeat;
 }
