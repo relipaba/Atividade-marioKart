@@ -6,30 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renato</title>
     <link rel="stylesheet" href="./style/style.css">
+    <style>
+        body,
+        header {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            padding: 3rem;
+            border-bottom: 1px solid black;
+            background-color: #303030;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .card_content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem;
+            gap: 1rem;
+            align-items: start;
+        }
+
+        .card_content_big {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem;
+            gap: 1rem;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <header>
+        <header id="topo">
             <div class=" head">
                 <img src="/img/logo.webp" alt="" class="logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Banners</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
+                    <li><a href="#banner_carrossel">Banners</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#mario_kart_stadium">Mario Kart Stadium</a></li>
+                    <li><a href="#water_park">Water Park</a></li>
+                    <li><a href="#moomoo">Moo Moo meadows</a></li>
+                    <li><a href="#secao_treino_mk8">Lista</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#secao_tabela">Tabela</a></li>
+                    <li><a href="#secao_formulario">Form</a></li>
+                    <li><a href="#secao_faq">FAQ</a></li>
                 </ul>
             </nav>
         </header>
-        <section>
+        <section id="banner_carrossel">
             <div class="carrossel_container">
                 <div class="carrossel_slides" id="carrossel_slides">
                     <div class="carrossel_item"><img src="/img/banner1.jpg" alt="Banner 1"></div>
@@ -41,10 +78,10 @@
                 <button class="btn_carrossel direita" onclick="mudarSlide(1)">&#10095;</button>
             </div>
         </section>
-        <section>
+        <section id="sobre">
             <div class="title">
                 <h2>Sobre nós!</h2>
-                <a href="">&#9650;</a>
+                <a href="#topo">&#9650;</a>
             </div>
             <div class="card_content">
                 <div class="card_normal">
@@ -64,23 +101,23 @@
                 <div class="card_normal">
                     <div class="card_normal_title">
                         <h3>Estratégias:</h3>
-                        <br>
                     </div>
                     <div class="card_normal_content">
-                        <p>Corredor: Melhor começar em primeiro e segurar liderança</p>
+                        <p><span>Corredor:</span> Melhor começar em primeiro e segurar liderança</p>
                         <br>
-                        <p>Cogumelo: Melhor começar atrás, garantir um cogumelo, pegar um grande e segurar liderança</p>
+                        <p><span>Cogumelo:</span> Melhor começar atrás, garantir um cogumelo, pegar um grande e segurar
+                            liderança</p>
                         <br>
-                        <p>Booster: Melhor começar em segundo para tras e pegar um draft boost dos jogadores da frente
+                        <p><span>Booster:</span> Melhor começar em segundo para tras e pegar um draft boost dos
+                            jogadores da frente
                         </p>
                         <br>
-                        <p>Item: Melhor se manter no fundo e virar usando items no fim</p>
+                        <p><span>Item:</span> Melhor se manter no fundo e virar usando items no fim</p>
                     </div>
                 </div>
                 <div class="card_normal">
                     <div class="card_normal_title">
                         <h3>Aviso importante!</h3>
-                        <br>
                     </div>
                     <div class="card_normal_content">
                         <p>Esse site so considera 150cc, e a melhor estratégia nem sempre deve ser usada, o jogo pode
@@ -90,26 +127,421 @@
             </div>
 
         </section>
-        <section>
+        <section id="mario_kart_stadium">
             <div class="title">
                 <h2>Mario Kart Stadium</h2>
-                <a href="">&#9650;</a>
+                <a href="#topo">&#9650;</a>
             </div>
             <div class="content">
                 <div class="pista_head">
                     <img src="/img/Mario_Kart_Stadium.png" alt="">
                 </div>
+                <aside>
+                    <img src="/img/MKS.png" alt="" style="max-width: 25rem;">
+                </aside>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis libero tempora mollitia.
+                        Quisquam accusantium saepe quam error, molestias sint quas eligendi, esse ducimus impedit labore
+                        fuga, maiores ipsam possimus.</p>
+                </article>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <footer></footer>
+        <section id="water_park">
+            <div class="title">
+                <h2>Water Park</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+            <div class="content">
+                <div class="pista_head">
+                    <img src="/img/WaterPark.jpg" alt="">
+                </div>
+                <aside>
+                    <img src="/img/WP.png" alt="" style="max-width: 25rem;">
+                </aside>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis libero tempora mollitia.
+                        Quisquam accusantium saepe quam error, molestias sint quas eligendi, esse ducimus impedit labore
+                        fuga, maiores ipsam possimus.</p>
+                </article>
+            </div>
+        </section>
+        <section id="moomoo">
+            <div class="title">
+                <h2>Moo Moo Meadows</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+            <div class="content">
+                <div class="pista_head">
+                    <img src="/img/moomoo.jpg" alt="">
+                </div>
+                <aside>
+                    <img src="/img/rMMM.png" alt="" style="max-width: 25rem;">
+                </aside>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis libero tempora mollitia.
+                        Quisquam accusantium saepe quam error, molestias sint quas eligendi, esse ducimus impedit labore
+                        fuga, maiores ipsam possimus.</p>
+                </article>
+            </div>
+        </section>
+        <section id="secao_treino_mk8">
+            <div class="title">
+                <h2>Lista de Treino de Atalhos</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+            <div class="lista_container">
+                <div class="lista_controles">
+                    <input type="text" id="pista_input" placeholder="Digite o nome da pista">
+                    <button type="button" id="btn_adicionar">Adicionar Pista</button>
+                </div>
+                <div class="filtros_container">
+                    <span>Filtrar por:</span>
+                    <button type="button" class="btn_filtro ativo" data-filtro="todos">Todos</button>
+                    <button type="button" class="btn_filtro" data-filtro="pendente">Para Treinar</button>
+                    <button type="button" class="btn_filtro" data-filtro="concluido">Dominados</button>
+                </div>
+                <ul id="lista_pistas"></ul>
+                <div class="lista_footer">
+                    <p id="contador_pistas">Total: 0 pistas (0 pendentes | 0 dominadas)</p>
+                    <button type="button" id="btn_limpar_tudo">Apagar Todos</button>
+                </div>
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="title">
+                <h2>Galeria</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+            <div class="card_content_big">
+                <div class="card_normal">
+                    <img src="/img/gal1.webp" alt="">
+                </div>
+                <div class="card_big">
+                    <img src="/img/gal2.jpg" alt="">
+                </div>
+                <div class="card_normal">
+                    <img src="/img/gal3.webp" alt="">
+                </div>
+            </div>
+            <div class="card_content_reverse">
+                <div class="card_big">
+                    <img src="/img/gal4.avif" alt="">
+                </div>
+                <div class="card_normal">
+                    <img src="/img/gal5.png" alt="">
+                </div>
+                <div class="card_big">
+                    <img src="/img/gal6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="secao_tabela">
+            <div class="title">
+                <h2>Tabela de status</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+            <div class="tabela">
+                <table class="tabela-mario-kart">
+                    <caption>Atributos de Combinações Populares em Mario Kart 8 Deluxe</caption>
+                    <thead>
+                        <tr>
+                            <th>Personagem / Corpo</th>
+                            <th>Velocidade</th>
+                            <th>Aceleração</th>
+                            <th>Peso</th>
+                            <th>Manuseio</th>
+                            <th>Tração / Aderência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baby Mario / Standard Kart</td>
+                            <td>2.25</td>
+                            <td>4.75</td>
+                            <td>2.0</td>
+                            <td>4.25</td>
+                            <td>3.75</td>
+                        </tr>
+                        <tr>
+                            <td>Toad / Biddybuggy</td>
+                            <td>2.50</td>
+                            <td>4.50</td>
+                            <td>2.25</td>
+                            <td>4.50</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Yoshi / Standard Bike</td>
+                            <td>3.50</td>
+                            <td>3.75</td>
+                            <td>3.25</td>
+                            <td>3.50</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Peach / Cat Cruiser</td>
+                            <td>3.50</td>
+                            <td>3.75</td>
+                            <td>3.25</td>
+                            <td>3.50</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Mario / Standard Kart</td>
+                            <td>3.75</td>
+                            <td>3.50</td>
+                            <td>3.75</td>
+                            <td>3.25</td>
+                            <td>3.25</td>
+                        </tr>
+                        <tr>
+                            <td>Luigi / Wild Wiggler</td>
+                            <td>3.75</td>
+                            <td>3.50</td>
+                            <td>3.75</td>
+                            <td>3.25</td>
+                            <td>3.25</td>
+                        </tr>
+                        <tr>
+                            <td>Link / Master Cycle</td>
+                            <td>4.00</td>
+                            <td>3.25</td>
+                            <td>4.25</td>
+                            <td>3.00</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Donkey Kong / Standard ATV</td>
+                            <td>4.25</td>
+                            <td>2.75</td>
+                            <td>4.50</td>
+                            <td>2.75</td>
+                            <td>3.25</td>
+                        </tr>
+                        <tr>
+                            <td>Bowser / Badwagon</td>
+                            <td>4.50</td>
+                            <td>2.25</td>
+                            <td>5.00</td>
+                            <td>2.25</td>
+                            <td>2.75</td>
+                        </tr>
+                        <tr>
+                            <td>Dry Bowser / Gold Standard</td>
+                            <td>4.50</td>
+                            <td>2.25</td>
+                            <td>4.75</td>
+                            <td>2.50</td>
+                            <td>2.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+        <section id="secao_formulario">
+            <div class="title">
+                <h2>Pesquisa de Piloto MK8D</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+
+            <form id="form_pesquisa" class="formulario_estilo">
+
+                <fieldset>
+                    <legend>Dados do Piloto</legend>
+
+                    <div class="form_grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="apelido">Apelido (Mii):</label>
+                        <input type="text" id="apelido" name="apelido" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="5" max="120" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências de Jogo</legend>
+
+                    <div class="form_grupo">
+                        <label for="plataforma">Plataforma:</label>
+                        <select id="plataforma" name="plataforma" required>
+                            <option value="">Selecione...</option>
+                            <option value="switch">Nintendo Switch</option>
+                            <option value="emulador">Emulador PC</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label>Estilo de Jogo Favorito:</label>
+                        <div class="radio_grupo">
+                            <label><input type="radio" name="estilo" value="corredor" required> Corredor</label>
+                            <label><input type="radio" name="estilo" value="cogumelo"> Cogumelo</label>
+                            <label><input type="radio" name="estilo" value="booster"> Booster</label>
+                        </div>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label>Cilindrada Favorita:</label>
+                        <div class="radio_grupo">
+                            <label><input type="radio" name="cilindrada" value="150cc" required> 150cc</label>
+                            <label><input type="radio" name="cilindrada" value="200cc"> 200cc</label>
+                        </div>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label><input type="checkbox" id="online" name="online"> Costuma jogar online?</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Itens e Comentários</legend>
+
+                    <div class="form_grupo">
+                        <label>Itens Favoritos:</label>
+                        <div class="checkbox_grupo">
+                            <label><input type="checkbox" name="item" value="cogumelo"> Cogumelo</label>
+                            <label><input type="checkbox" name="item" value="casco"> Casco Vermelho</label>
+                            <label><input type="checkbox" name="item" value="estrela"> Estrela</label>
+                            <label><input type="checkbox" name="item" value="bullet"> Bullet Bill</label>
+                        </div>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="pista_favorita">Pista Favorita:</label>
+                        <select id="pista_favorita" name="pista_favorita" required>
+                            <option value="">Selecione...</option>
+                            <option value="stadium">Mario Kart Stadium</option>
+                            <option value="waterpark">Water Park</option>
+                            <option value="moomoo">Moo Moo Meadows</option>
+                        </select>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="nota">Nota para o jogo (1 a 5):</label>
+                        <input type="number" id="nota" name="nota" min="1" max="5" required>
+                    </div>
+
+                    <div class="form_grupo">
+                        <label for="comentario">Dica ou Sugestão:</label>
+                        <textarea id="comentario" name="comentario" rows="3" required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="btn_enviar">Enviar Pesquisa</button>
+            </form>
+        </section>
+        <section id="secao_faq">
+            <div class="title">
+                <h2>FAQ - Dúvidas Frequentes</h2>
+                <a href="#topo">&#9650;</a>
+            </div>
+
+            <div class="faq_container">
+                <input type="text" id="busca_faq" placeholder="Pesquisar dúvida..." class="campo_texto">
+
+                <h3 class="faq_categoria_titulo">Dicas de Jogo</h3>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp1')">Como funciona o
+                        mini-turbo?</button>
+                    <div id="resp1" class="faq_resposta">
+                        <p>O mini-turbo é carregado fazendo curvas fechadas com o botão de derrapagem.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp2')">Qual a diferença
+                        entre Corredor e Bagger?</button>
+                    <div id="resp2" class="faq_resposta">
+                        <p>O Corredor foca em largar na frente, enquanto o Bagger fica no fundo para pegar itens
+                            fortes.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp3')">O que é o draft
+                        boost (vácuo)?</button>
+                    <div id="resp3" class="faq_resposta">
+                        <p>É o impulso de velocidade ganho ao ficar logo atrás de outro jogador.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp4')">Como usar o
+                        cogumelo na hora certa?</button>
+                    <div id="resp4" class="faq_resposta">
+                        <p>Use para cortar caminhos difíceis na lama ou grama profunda.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp5')">Vale a pena jogar
+                        na categoria 200cc?</button>
+                    <div id="resp5" class="faq_resposta">
+                        <p>Sim, mas exige bastante uso do freio nas curvas para não cair da pista.</p>
+                    </div>
+                </div>
+
+                <h3 class="faq_categoria_titulo">Atalhos e Pistas</h3>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp6')">Preciso de
+                        cogumelo em todo atalho?</button>
+                    <div id="resp6" class="faq_resposta">
+                        <p>Não, alguns atalhos menores podem ser cruzados apenas pulando.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp7')">Qual pista é
+                        melhor para treinar?</button>
+                    <div id="resp7" class="faq_resposta">
+                        <p>A Mario Kart Stadium é ótima devido às suas curvas amplas e seguras.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp8')">Como achar atalhos
+                        escondidos?</button>
+                    <div id="resp8" class="faq_resposta">
+                        <p>Observar os caminhos que os fantasmas fazem no Time Trials ajuda muito.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp9')">Onde usar o Bullet
+                        Bill?</button>
+                    <div id="resp9" class="faq_resposta">
+                        <p>O ideal é ativar em trechos longos e retos ou no final da corrida.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button type="button" class="faq_pergunta" onclick="mostrarResposta('resp10')">Como funcionam as
+                        rampas antigravidade?</button>
+                    <div id="resp10" class="faq_resposta">
+                        <p>Elas mudam as rodas do kart e dão impulso ao esbarrar em outros jogadores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
